@@ -65,6 +65,7 @@
   ansible.builtin.service:
     name: backend
     state: started 
+    enabled: yes
     
 
 
