@@ -1,0 +1,16 @@
+- name: create ec2 and route 53 records
+  hosts: localhost
+  tasks:
+  - name: create ec2 instances
+    amazon.aws.ec2_instance:
+      instance_type: t2.micro
+      name: "{{ item }}"
+      security_group: allowtraffic
+      image_id: ami-090252cbe067a9e58
+      tags:
+        Name: "{{ item }}" 
+    loop:
+    - db 
+    - backend
+    - frontend
+    register: ec2-instance_info
