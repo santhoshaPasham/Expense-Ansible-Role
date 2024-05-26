@@ -1,3 +1,5 @@
 password: ExpenseApp@1
 login_host: db.daws9.online
 DB_HOST: db.daws9.online
+app_location: /app
+component: backend
