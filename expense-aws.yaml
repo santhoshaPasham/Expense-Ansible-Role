@@ -13,4 +13,4 @@
     - db 
     - backend
     - frontend
-    register: ec2-instance_info
+    register: ec2_instance_info
