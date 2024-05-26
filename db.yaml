@@ -1,7 +1,7 @@
 - name: Configure DB Server
   hosts: db
   become: yes
-  var_files:
+  vars_files:
   - credentials.yaml
   roles:
   - db
